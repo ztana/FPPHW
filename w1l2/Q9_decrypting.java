@@ -44,8 +44,8 @@ public class Q9_decrypting {
 		}
 		int digits[] = new int[4];
 		digits[0] = (input/1000)		%10;
-		digits[1] = ((input%1000 /100))	%10;
-		digits[2] = ((input%100 /10)) 	%10;
+		digits[1] = ((input%1000 /100))		%10;
+		digits[2] = ((input%100 /10)) 		%10;
 		digits[3] = (input%10)			%10;
 		for(int i=0;i<4;i++)
 			digits[i] = (digits[i]>=7? digits[i]-7 : digits[i]+3);
