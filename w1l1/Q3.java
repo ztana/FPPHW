@@ -1,7 +1,19 @@
 package w1l1;
 
 import java.util.Scanner;
+/**
+ * 
+ * @author 984881
+ * result
+ Enter a five-digit number:
+12
+Enter a five-digit number:
+136
+Enter a five-digit number:
+11222
+Not A palindrome !
 
+ */
 public class Q3 {
 
 	public static void main(String[] args) {

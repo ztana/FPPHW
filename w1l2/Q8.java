@@ -1,5 +1,17 @@
 package w1l1;
-
+/**
+ * 
+ * @author 984881
+ * result
+Student 0's correct count is 7
+Student 1's correct count is 6
+Student 2's correct count is 5
+Student 3's correct count is 4
+Student 4's correct count is 8
+Student 5's correct count is 7
+Student 6's correct count is 7
+Student 7's correct count is 7
+ */
 public class Q8 {
 	public static void main(String[] args) {
 		char studentsAnswer2Question[][]= 

@@ -4,6 +4,12 @@ import java.util.*;
  * 
  * @author 984881
  * username implement
+ * result
+Please input your first name
+zuo
+Please input your last name
+pengg
+Your userAccount is : zpengg085
  */
 public class Q4 {
 

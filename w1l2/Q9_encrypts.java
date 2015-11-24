@@ -11,6 +11,11 @@ import java.util.Scanner;
  * and getting the remainder after dividing the new value by 10.
  * Then swap the first digit with the third,
  * and swap the second digit with the fourth.
+ * 
+ * result:
+Please input your 4-digit integer: 
+1234
+0189
  */
 public class Q9_encrypts {
 

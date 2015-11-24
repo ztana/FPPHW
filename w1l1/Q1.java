@@ -8,6 +8,15 @@ import java.util.*;
  * @author 984881
  *
  * money calculator
+ * result
+ Enter an amount of money, for example, 11,56:
+
+11.36
+11 dollars
+1 quarters
+1 dimes
+0 nickles
+1 pennies
  */
 public class Q1 {
 

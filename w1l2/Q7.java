@@ -1,7 +1,17 @@
 package w1l1;
 
 import java.util.Scanner;
-
+/**
+ * 
+ * @author 984881
+ * result
+Please input your weight: 
+85
+Please choice which planet are you in: 
+6
+You are in Neptune
+your weight is: 104.55 lb
+ */
 public class Q7 {
 
 	public static void main(String[] args) {
@@ -38,6 +48,7 @@ public class Q7 {
 			System.out.println("You are in Neptune");
 			break;
 		default:
+			System.out.println("I don't know where are you");
 			break;
 		}
 		System.out.println("your weight is: " + weight + " lb");

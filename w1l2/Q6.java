@@ -1,7 +1,22 @@
 package w1l1;
 
 import java.util.Scanner;
+/**
+ * 
+ * @author 984881
+ * result
+Please input checkerboard pattern: 
+8
+* * * * * * * * 
+ * * * * * * * *
+* * * * * * * * 
+ * * * * * * * *
+* * * * * * * * 
+ * * * * * * * *
+* * * * * * * * 
+ * * * * * * * *
 
+ */
 public class Q6 {
 
 	public static void main(String[] args) {

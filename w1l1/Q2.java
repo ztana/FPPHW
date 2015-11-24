@@ -6,7 +6,18 @@ import java.util.Scanner;
  * 
  * @author 984881
  * Leap Year
+ * result
+ Enter Year:
+2014
+This year is not a Leap Year
+Enter Year:
+1988
+This year is a Leap Year
+Enter Year:
+2000
+This year is a Leap Year
  */
+
 public class Q2 {
 
 	public static void main(String[] args) {

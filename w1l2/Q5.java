@@ -2,7 +2,12 @@ package w1l1;
 
 import java.util.*;
 import java.util.Formatter;
-
+/**
+ * 
+ * @author 984881
+ * result
+ "horse","dog","cat"
+ */
 public class Q5 {
 	public static void main(String[] args) {
 		String[] inputArray = {"horse", "dog", "cat", "horse","dog"};

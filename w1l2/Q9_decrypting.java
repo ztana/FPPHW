@@ -22,6 +22,13 @@ import java.util.Scanner;
  * 	  0~8 by adding   3
  * 
  * and getting the remainder after dividing the new value by 10.
+ * 
+ * 
+ * result:
+Please input your 4-digit integer: 
+0189
+1234
+ * 
  */
 public class Q9_decrypting {
 
