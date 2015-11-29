@@ -9,19 +9,19 @@ import java.util.*;
  * @author 984881
  * result
  * 
-Your plant speed is 1.00 unit per hour
+Your speed is 1.00 unit per hour
 Distance from the two cities is: 14.14.
 your real travel time is:00:14:23
 Your travel time with time equation is: 00:14:23
 
 
-Your plant speed is 1.00 unit per hour
+Your speed is 1.00 unit per hour
 Distance from the two cities is: 100.00.
 your real travel time is:02:41:45
 Your travel time with time equation is: 03:19:15
 
 
-Your plant speed is 1.00 unit per hour
+Your speed is 1.00 unit per hour
 Distance from the two cities is: 223.61.
 your real travel time is:06:46:07
 Your travel time with time equation is: 09:14:07
@@ -110,7 +110,7 @@ class TravelCal {
 		speed = 1;
 		cFrom = c1;
 		cTo = c2;
-		System.out.printf("Your plant speed is %.2f unit per hour\n",speed);
+		System.out.printf("Your speed is %.2f unit per hour\n",speed);
 		calTimeOfTravel();
 	}
 
