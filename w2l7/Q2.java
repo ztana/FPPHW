@@ -1,5 +1,14 @@
 package w2l7;
 
+/**
+ * 
+ * @author 984881
+ *
+ * result
+a->Andrew
+b->Billy
+w->Willie
+ */
 class Entry
 {
 	private char c;
