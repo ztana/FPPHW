@@ -1,5 +1,24 @@
 package w2l8;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
+
+/**
+ * 
+ * @author 984881
+ * result
+ * 
+Directory: head--0
+Directory: D--35
+Directory: A--112
+Directory: B--453
+after delete
+Directory: head--0
+Directory: A--112
+Directory: B--453
+
+ */
 class Directory {
 	String name;
 	long pno; // Phone number
@@ -20,6 +39,7 @@ class Directory {
 class DirectoryOpr {
 	private Directory first; // ref to first Directory
 	private Directory last; // ref to last Directory
+	int lenth;
 
 	// -------------------------------------------------------------
 	public DirectoryOpr() // constructor
@@ -27,13 +47,14 @@ class DirectoryOpr {
 		first = new Directory("head",0);
 		last = new Directory("last",0);
 		first.next = null;
+		lenth = 0;
 		//last.next = null;
 	}
 
 	// -------------------------------------------------------------
 	public boolean isEmpty() // true if no Directory in your list
 	{
-		if(first == last)
+		if(first.next == null)
 			return true;
 		return false;
 	}
@@ -52,6 +73,7 @@ class DirectoryOpr {
 			n.next = first.next;
 			first.next = n;
 		}
+		lenth++;
 	}
 
 	// -------------------------------------------------------------
@@ -65,36 +87,36 @@ class DirectoryOpr {
 		}
 		else
 		{
-			n = last.next;
+			last.next = n;
 			last = n;
 			//n.next = null;
 		}
+		lenth++;
 	}
 
 	// -------------------------------------------------------------
 	public Directory deleteFirst() // delete first Directory
 	{
-		Directory o = first;
-		first = first.next;
+		Directory o = first.next;
+		first.next = first.next.next;
+		lenth--;
 		return o;
 	}
 // -------------------------------------------------------------
 	public int size() {
-		int size = 0;
-		while(first.next != null)
-		{
-			first = first.next;
-			size++;
-		}
-		return size;
+		
+		return lenth;
 	}
 // -------------------------------------------------------------
 	public void displayList() {
-		while(first.next != null)
+		Directory cur = first; 
+		int l = lenth;
+		while(l !=-1)
 		{
 			//System.out.println(first.toString());
-			first.displayDirectory();
-			first = first.next;
+			cur.displayDirectory();
+			cur = cur.next;
+			l--;
 		}
 	}
 // -------------------------------------------------------------
@@ -115,11 +137,18 @@ class DirectoryOpr {
 public class Q4 {
 
 	public static void main(String[] args) {
+		
+		Hashtable tb;
+		HashMap map;
+		HashSet set;
 		// TODO Auto-generated method stub
 		DirectoryOpr dir = new DirectoryOpr();
 		dir.insertFirst("A", 112);
 		dir.insertFirst("D", 35);
-		//dir.insertLast("B", 453);
+		dir.insertLast("B", 453);
+		dir.displayList();
+		dir.deleteFirst();
+		System.out.println("after delete");
 		dir.displayList();
 	}
 
