@@ -137,10 +137,6 @@ class DirectoryOpr {
 public class Q4 {
 
 	public static void main(String[] args) {
-		
-		Hashtable tb;
-		HashMap map;
-		HashSet set;
 		// TODO Auto-generated method stub
 		DirectoryOpr dir = new DirectoryOpr();
 		dir.insertFirst("A", 112);
