@@ -12,6 +12,7 @@ f3 l3 age: 23
 After delete l
 f2 l2 age: 23
 f3 l3 age: 23
+Not Found age: 0
 
  */
 
@@ -51,14 +52,14 @@ class PersonArrayOpe
 	
 	public Person find(String searchName) // Pass Lastname as an argument
 	{ 
-		for(Person p :a)
+		for(int i=0;i<nElems;i++)
 		{
-			if(p.getLastName() == searchName)
+			if(a[i].getLastName() == searchName)
 			{
-				return p;
+				return a[i];
 			}
 		}
-		return null;
+		return new Person("Found","Not",0);
 	} 
 	public void insert(String last, String first, int age)// Insert at last
 	{
@@ -131,6 +132,8 @@ public class Q1 {
 		ar.delete("l");
 		System.out.println("After delete l");
 		ar.displayAll();
+		Person p = ar.find("l");
+		p.displayPerson();
 	}
 
 }
