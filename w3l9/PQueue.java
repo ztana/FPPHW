@@ -1,15 +1,20 @@
 package w3l9;
 
+
 /**
  * 
  * @author 984881
  * 
  * result
  * 
- [1, 12, 110]
+list is empty? false
+Peeking: 13
+Whole list:  13, 14, 110 
+
  */
 
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 //import w3l9.Q1.PQueue;
@@ -30,14 +35,29 @@ public class PQueue extends LinkedList{
     
 	
 
-	@Override
+    @Override
 	public boolean add(Object e) {
 		// TODO Auto-generated method stub
+    	super.add(e);
 		sort(idComparator);
-		return super.add(e);
+		return true;
 	}
 
+	public String toString() {
+        Iterator<Object> it = iterator();
+        if (! it.hasNext())
+            return " ";
 
+        StringBuilder sb = new StringBuilder();
+        sb.append(' ');
+        for (;;) {
+            Object e = it.next();
+            sb.append(e == this ? "(this Collection)" : e);
+            if (! it.hasNext())
+                return sb.append(' ').toString();
+            sb.append(',').append(' ');
+        }
+    }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -45,7 +65,14 @@ public class PQueue extends LinkedList{
 		pq.add(12);
 		pq.add(1);
 		pq.add(110);
-		System.out.println(pq.toString());
+		pq.add(13);
+		pq.add(14);
+		pq.remove();
+		System.out.println("list is empty? "+pq.isEmpty());
+		pq.remove();
+		System.out.println("Peeking: "+pq.peek());
+		
+		System.out.println("Whole list: "+pq);
 	}
 
 }
