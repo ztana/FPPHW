@@ -40,6 +40,10 @@ class PersonItem
 {                                
 	private String mail_id;  //Person E_Mail-id-Key
 	private String name;  // Name of the person
+	public PersonItem()
+	{
+		
+	}
 	public PersonItem(String mail_id, String name) {
 		this.mail_id = mail_id;
 		this.name = name;
@@ -192,6 +196,7 @@ public static void main(String[] args) throws IOException
        case 'i':
        System.out.print("Enter key and name to insert: ");
           aKey = in.nextInt();
+          value = new PersonItem();
           value.setName(in.next()); 
           System.out.println("Enter mail id: ");
           value.setMail_id(in.next());
