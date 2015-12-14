@@ -28,7 +28,29 @@ Key Found statusfalse
 Enter first letter of show, insert, delete, or find: f
 Enter key value to find: 7
 Key Found statustrue
-Enter first letter of show, insert, delete, or find: 
+
+Enter first letter of show, insert, delete, or find: i
+Enter key and name to insert: 11
+c++
+Enter mail id: 
+124ff
+Enter first letter of show, insert, delete, or find: s
+Table: 
+Index : 0 11 
+Mail ID: 124ff Name: c++
+
+Index : 1 1 
+Mail ID: Person Item 1 Name: FPP
+
+Index : 2 7 
+Mail ID: Person Item 3 Name: SE
+
+Index : 3 **
+Index : 4 10 
+Mail ID: Person Item 4 Name: C#
+
+Index : 5 5 
+Mail ID: Person Item 2 Name: Java
  */
 
 //demonstrates hash table user defined implementation with linear probing
